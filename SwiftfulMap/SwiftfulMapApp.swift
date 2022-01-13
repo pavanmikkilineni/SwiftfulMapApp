@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftfulMapApp: App {
+    
+    @StateObject private var viewModel:LocationsViewModel = LocationsViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            LocationView()
+            LocationsView()
+                .environmentObject(viewModel)
         }
     }
 }
