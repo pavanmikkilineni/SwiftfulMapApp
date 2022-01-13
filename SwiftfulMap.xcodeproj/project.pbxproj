@@ -15,6 +15,8 @@
 		39DB5D8827904F3F00FFBBAA /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB5D8727904F3F00FFBBAA /* LocationsView.swift */; };
 		39DB5D8A27904FCF00FFBBAA /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB5D8927904FCE00FFBBAA /* LocationsViewModel.swift */; };
 		39DB5D8C27906E6E00FFBBAA /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB5D8B27906E6E00FFBBAA /* LocationsListView.swift */; };
+		39DB5D9427907CC800FFBBAA /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB5D9227907CC800FFBBAA /* LocationsView.swift */; };
+		39DB5D9527907CC800FFBBAA /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB5D9327907CC800FFBBAA /* LocationsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		39DB5D8727904F3F00FFBBAA /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		39DB5D8927904FCE00FFBBAA /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		39DB5D8B27906E6E00FFBBAA /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
+		39DB5D9227907CC800FFBBAA /* LocationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		39DB5D9327907CC800FFBBAA /* LocationsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		39DB5D7F27904B3F00FFBBAA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				39DB5D9327907CC800FFBBAA /* LocationsListView.swift */,
+				39DB5D9227907CC800FFBBAA /* LocationsView.swift */,
 				39DB5D8727904F3F00FFBBAA /* LocationsView.swift */,
 				39DB5D8B27906E6E00FFBBAA /* LocationsListView.swift */,
 			);
@@ -186,7 +192,9 @@
 				39DB5D8327904B7A00FFBBAA /* Location.swift in Sources */,
 				39DB5D702790476D00FFBBAA /* SwiftfulMapApp.swift in Sources */,
 				39DB5D8A27904FCF00FFBBAA /* LocationsViewModel.swift in Sources */,
+				39DB5D9527907CC800FFBBAA /* LocationsListView.swift in Sources */,
 				39DB5D8C27906E6E00FFBBAA /* LocationsListView.swift in Sources */,
+				39DB5D9427907CC800FFBBAA /* LocationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
