@@ -24,6 +24,9 @@ struct LocationsView: View {
                 }
             }
         }
+        .sheet(item: $viewModel.sheetLocation , onDismiss: nil) { location in
+            LocationDetailView(location: location)
+        }
     }
 }
 
@@ -64,7 +67,7 @@ extension LocationsView{
             location in
             MapAnnotation(coordinate: location.coordinates){
                 LocationMapAnnotationsView()
-                    .scaleEffect(s:viewModel.mapLocation == location ? 1 : 0.7)
+                    .scaleEffect(viewModel.mapLocation == location ? 1 : 0.7)
                     .shadow(radius:20)
                     .onTapGesture{
                         viewModel.showNextLocation(location: location)
