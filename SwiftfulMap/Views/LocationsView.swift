@@ -14,21 +14,13 @@ struct LocationsView: View {
     
     var body: some View {
         ZStack{
-            Map(coordinateRegion:$viewModel.mkCoordinateRegion)
-                .ignoresSafeArea()
+            mapLayer
             VStack(spacing:0){
                 header
                     .padding()
                 Spacer()
                 ZStack{
-                    ForEach(viewModel.locations){ location in
-                        if viewModel.mapLocation == location{
-                            PreviewLocationsView(location: location)
-                                .shadow(color: Color.black.opacity(0.3), radius: 20)
-                                .padding()
-                                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
-                        }
-                    }
+                    locationsPreview
                 }
             }
         }
@@ -65,6 +57,32 @@ extension LocationsView{
         .background(.thickMaterial)
         .cornerRadius(10)
         .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 15)
+    }
+    
+    private var mapLayer:some View{
+        Map(coordinateRegion:$viewModel.mkCoordinateRegion,annotationItems: viewModel.locations,annotationContent: {
+            location in
+            MapAnnotation(coordinate: location.coordinates){
+                LocationMapAnnotationsView()
+                    .scaleEffect(s:viewModel.mapLocation == location ? 1 : 0.7)
+                    .shadow(radius:20)
+                    .onTapGesture{
+                        viewModel.showNextLocation(location: location)
+                    }
+            }
+        })
+            .ignoresSafeArea()
+    }
+    
+    private var locationsPreview:some View{
+        ForEach(viewModel.locations){ location in
+            if viewModel.mapLocation == location{
+                PreviewLocationsView(location: location)
+                    .shadow(color: Color.black.opacity(0.3), radius: 20)
+                    .padding()
+                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+            }
+        }
     }
 }
 
