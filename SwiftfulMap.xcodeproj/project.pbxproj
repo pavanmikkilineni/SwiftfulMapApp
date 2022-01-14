@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3948A5A3279156D200C4BF19 /* PreviewLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3948A5A2279156D100C4BF19 /* PreviewLocationsView.swift */; };
 		39DB5D702790476D00FFBBAA /* SwiftfulMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB5D6F2790476D00FFBBAA /* SwiftfulMapApp.swift */; };
 		39DB5D772790477E00FFBBAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DB5D762790477E00FFBBAA /* Preview Assets.xcassets */; };
 		39DB5D7E27904AFC00FFBBAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DB5D7D27904AFB00FFBBAA /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3948A5A2279156D100C4BF19 /* PreviewLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLocationsView.swift; sourceTree = "<group>"; };
 		39DB5D6C2790476D00FFBBAA /* SwiftfulMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DB5D6F2790476D00FFBBAA /* SwiftfulMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulMapApp.swift; sourceTree = "<group>"; };
 		39DB5D762790477E00FFBBAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				39DB5D9227907CC800FFBBAA /* LocationsView.swift */,
 				39DB5D8727904F3F00FFBBAA /* LocationsView.swift */,
 				39DB5D8B27906E6E00FFBBAA /* LocationsListView.swift */,
+				3948A5A2279156D100C4BF19 /* PreviewLocationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				39DB5D8627904D6600FFBBAA /* LocationsDataService.swift in Sources */,
 				39DB5D8827904F3F00FFBBAA /* LocationsView.swift in Sources */,
+				3948A5A3279156D200C4BF19 /* PreviewLocationsView.swift in Sources */,
 				39DB5D8327904B7A00FFBBAA /* Location.swift in Sources */,
 				39DB5D702790476D00FFBBAA /* SwiftfulMapApp.swift in Sources */,
 				39DB5D8A27904FCF00FFBBAA /* LocationsViewModel.swift in Sources */,

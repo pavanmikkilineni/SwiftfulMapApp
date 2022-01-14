@@ -20,6 +20,16 @@ struct LocationsView: View {
                 header
                     .padding()
                 Spacer()
+                ZStack{
+                    ForEach(viewModel.locations){ location in
+                        if viewModel.mapLocation == location{
+                            PreviewLocationsView(location: location)
+                                .shadow(color: Color.black.opacity(0.3), radius: 20)
+                                .padding()
+                                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                        }
+                    }
+                }
             }
         }
     }
@@ -35,6 +45,7 @@ extension LocationsView{
                     .foregroundColor(.primary)
                     .frame(height:55)
                     .frame(maxWidth:.infinity)
+                    .animation(.none,value:viewModel.mapLocation)
                     .overlay(alignment:.leading){
                         Image(systemName: "arrow.down")
                             .font(.headline)
