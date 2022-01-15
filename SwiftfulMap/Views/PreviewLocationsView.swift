@@ -47,7 +47,7 @@ extension PreviewLocationsView{
             }
         }
         .padding(6)
-        .background(Color.white)
+        .background(.ultraThinMaterial)
         .cornerRadius(10)
     }
     
